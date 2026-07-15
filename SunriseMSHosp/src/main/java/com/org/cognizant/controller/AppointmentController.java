@@ -16,7 +16,7 @@ import java.util.List;
 public class AppointmentController {
 
     private final AppointmentService appointmentService;
-
+    /*This is used to create a new record in the database*/
     @PostMapping
     public String create(@RequestBody Appointment appointment){
         return appointmentService.create(appointment);
